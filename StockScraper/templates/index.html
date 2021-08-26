@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samuel Beaudoin info</title>
+      <style>
+          * {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  height: 140vh;
+  color: #333;
+  background-image: linear-gradient(to top left, #5a613a 0%, #e1eb5fc5 100%);
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  width: 85rem;
+  position: absolute;
+  height: 300px;
+  top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  position: absolute;
+  width: 100rem;
+  height: 60rem;
+  background-color: rgba(170, 172, 159, 0.719);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  overflow: hidden;
+  display: flex;
+  top: 20rem;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  color: rgba(82, 85, 70, 0.719);
+  font-size: 60px;
+  position: absolute;
+  width: 600px;
+  left: 200px;
+  top: 30px;
+}
+
+.description {
+  color: rgba(48, 51, 38, 0.719);
+  position: absolute;
+  top: 38px;
+  left: 800px;
+  font-size: 25px;
+}
+
+.sides {
+  position: relative;
+  flex: 50%;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+}
+
+
+.proto-container {
+  position: absolute;
+  top: -45%;
+  left: 5%;
+  height: 30%;
+  z-index: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.proto {
+  border: 3px solid rgba(201, 219, 95, 0.719);
+  width: 150px;
+  height: 150px;
+  margin-top: 2em;
+  transform: translate(10%);
+  border-radius: 10%;
+}
+
+.proto-container1 {
+  position: absolute;
+  top: 0%;
+  left: 25%;
+  height: 30%;
+  z-index: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.proto1 {
+  border: 3px solid rgba(201, 219, 95, 0.719);
+  width: 150px;
+  height: 150px;
+  margin-top: 2em;
+  transform: translate(10%);
+  border-radius: 10%;
+}
+
+.proto-container2 {
+  position: absolute;
+  top: -45%;
+  left: 65%;
+  height: 30%;
+  z-index: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.proto2 {
+  border: 3px solid rgba(201, 219, 95, 0.719);
+  width: 150px;
+  height: 150px;
+  margin-top: 2em;
+  transform: translate(10%);
+  border-radius: 10%;
+}
+
+.proto-container3 {
+  position: absolute;
+  top: 0%;
+  left: 86%;
+  height: 30%;
+  z-index: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.proto3 {
+  border: 3px solid rgba(201, 219, 95, 0.719);
+  width: 150px;
+  height: 150px;
+  margin-top: 2em;
+  transform: translate(10%);
+  border-radius: 10%;
+}
+
+#inputBox1{
+    width: 100%
+}
+#inputContainer1{
+position: relative;
+width: auto;
+height: auto;
+top: 38%;
+text-align: center;
+}
+
+#inputbox1{
+    background-color: #a1a985;
+    border: 5px solid rgba(201, 219, 95, 0.719);
+   width: 45%;
+   font-size: 70px;
+   text-align: center;
+}
+
+::placeholder {
+  color: rgba(201, 219, 95, 0.719);
+  opacity: 1; /* Firefox */
+}
+
+#button1:hover{
+    background-color: #E0E0E0;
+}
+
+#button1{
+    width: 45%;
+    border: 5px solid rgba(201, 219, 95, 0.719);
+    font-size: 30px;
+}
+
+
+      </style>
+  </head>
+  <body>
+    <header>
+      <h1>STK scraper</h1>
+      <p class="description">
+        Search whatever ticker you want to see its financial data.
+        Making an account will allow you to keep track of ticker search history.
+      </p>
+    </header>
+    <main>
+      <div class="proto-container">
+        <div class="proto"></div>
+        <div class="proto"></div>
+        <div class="proto"></div>
+        <div class="proto"></div>
+        <div class="proto"></div>
+        <div class="proto"></div>
+        <div class="proto"></div>
+      </div>
+      <div class="proto-container1">
+        <div class="proto1"></div>
+        <div class="proto1"></div>
+        <div class="proto1"></div>
+        <div class="proto1"></div>
+        <div class="proto1"></div>
+        <div class="proto1"></div>
+        <div class="proto1"></div>
+      </div>
+      <div class="proto-container2">
+        <div class="proto2"></div>
+        <div class="proto2"></div>
+        <div class="proto2"></div>
+        <div class="proto2"></div>
+        <div class="proto2"></div>
+        <div class="proto2"></div>
+        <div class="proto2"></div>
+      </div>
+      <div class="proto-container3">
+        <div class="proto3"></div>
+        <div class="proto3"></div>
+        <div class="proto3"></div>
+        <div class="proto3"></div>
+        <div class="proto3"></div>
+        <div class="proto3"></div>
+        <div class="proto3"></div>
+      </div>
+      <section class="sides left">
+        <div id="inputContainer1">
+        <form id="form1" action="DisplayTable" method="post">
+        <input id="inputbox1" type="text" name="stock" placeholder="Enter ticker">
+            <br>
+        <button id="button1" type="submit">Scrape</button>
+        </form>
+        </div>
+      </section>
+    </main>
+  <script>
+      let movingPart = document.querySelector(`main`);
+let protos = document.querySelectorAll(`.proto`);
+
+movingPart.addEventListener(`mousemove`, (event) => {
+  let move2 = event.clientX * 0.1 + 4;
+
+  protos.forEach((proto) => {
+    proto.style.transform = `translateY(${move2}%)`;
+  });
+});
+
+let protos1 = document.querySelectorAll(`.proto1`);
+
+movingPart.addEventListener(`mousemove`, (event) => {
+  let move2 = event.clientX * 0.1 + 4;
+
+  protos1.forEach((proto1) => {
+    proto1.style.transform = `translateY(-${move2}%)`;
+  });
+});
+
+let protos2 = document.querySelectorAll(`.proto2`);
+
+movingPart.addEventListener(`mousemove`, (event) => {
+  let move2 = event.clientX * 0.1 + 4;
+
+  protos2.forEach((proto2) => {
+    proto2.style.transform = `translateY(${move2}%)`;
+  });
+});
+
+let protos3 = document.querySelectorAll(`.proto3`);
+
+movingPart.addEventListener(`mousemove`, (event) => {
+  let move2 = event.clientX * 0.1 + 4;
+
+  protos3.forEach((proto3) => {
+    proto3.style.transform = `translateY(-${move2}%)`;
+  });
+});
+  </script>
+  </body>
+</html>
+
